@@ -1,0 +1,61 @@
+Github Commands :
+
+Clone :
+
+git clone https://github.com/smartvijay/webSite.git
+
+// cd go to our project 
+
+cd webSite/
+
+git init
+
+// remove orgin
+
+git remote remove origin
+
+// add origin
+
+git remote add origin https://github.com/smartvijay/webSite.git
+
+// verify git remote origin
+
+git remote -v
+
+// git status for added files verification
+
+git status
+
+// to add entire files
+
+git add .
+
+// you can add all local changes to staging and commit them with one command
+
+git commit -a -m "First Commit - websites codes"
+
+// to push your local commits to the main branch of the origin remote
+
+git push origin main
+
+// git pull from resource for update
+
+git pull https://github.com/smartvijay/webSite.git
+
+
+Error :
+
+1. $ git push origin main
+remote: Permission to smartvijay/webSite.git denied to waylearn.
+fatal: unable to access 'https://github.com/smartvijay/webSite.git/': 
+The requested URL returned error: 403
+
+Solution : go to windows creditional and delete github push it will ask signin if successed
+we can push to our remote origin.
+
+
+
+
+
+
+
