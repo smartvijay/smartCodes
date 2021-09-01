@@ -1,0 +1,22 @@
+--------------------------------------------------------
+--  File created - Wednesday-September-01-2021   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table REGISTER
+--------------------------------------------------------
+
+  CREATE TABLE "SYSTEM"."REGISTER" 
+   (	"USERID" NUMBER(20,0), 
+	"FIRSTNAME" VARCHAR2(20 BYTE), 
+	"LASTNAME" VARCHAR2(20 BYTE), 
+	"USERNAME" VARCHAR2(20 BYTE), 
+	"PASSWORD" VARCHAR2(20 BYTE), 
+	"MOBILENUMBER" NUMBER(20,0), 
+	"EMAILID" VARCHAR2(20 BYTE)
+   ) PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+REM INSERTING into SYSTEM.REGISTER
+SET DEFINE OFF;
+Insert into SYSTEM.REGISTER (USERID,FIRSTNAME,LASTNAME,USERNAME,PASSWORD,MOBILENUMBER,EMAILID) values (3,'dinesh','kamal','rock','rock123',9489897876,'din@gmail.com');

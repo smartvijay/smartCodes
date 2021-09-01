@@ -1,0 +1,25 @@
+--------------------------------------------------------
+--  File created - Wednesday-September-01-2021   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table PRODUCT
+--------------------------------------------------------
+
+  CREATE TABLE "SYSTEM"."PRODUCT" 
+   (	"PID" NUMBER, 
+	"PRODUCTNAME" VARCHAR2(20 BYTE), 
+	"QUANTITY" NUMBER, 
+	"PRICE" VARCHAR2(20 BYTE)
+   ) PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+REM INSERTING into SYSTEM.PRODUCT
+SET DEFINE OFF;
+Insert into SYSTEM.PRODUCT (PID,PRODUCTNAME,QUANTITY,PRICE) values (3,'jack',6,'700.0');
+Insert into SYSTEM.PRODUCT (PID,PRODUCTNAME,QUANTITY,PRICE) values (8,'prasanth',8,'500.0');
+Insert into SYSTEM.PRODUCT (PID,PRODUCTNAME,QUANTITY,PRICE) values (2,'kannan',2,'100.0');
+Insert into SYSTEM.PRODUCT (PID,PRODUCTNAME,QUANTITY,PRICE) values (7,'prasanth',8,'500.0');
+Insert into SYSTEM.PRODUCT (PID,PRODUCTNAME,QUANTITY,PRICE) values (34,'klllooo',45,'656');
+Insert into SYSTEM.PRODUCT (PID,PRODUCTNAME,QUANTITY,PRICE) values (222,'baloon',5,'5000');
+Insert into SYSTEM.PRODUCT (PID,PRODUCTNAME,QUANTITY,PRICE) values (2332,'fvd',22,'42');
