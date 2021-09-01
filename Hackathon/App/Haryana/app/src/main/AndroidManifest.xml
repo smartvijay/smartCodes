@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.savelife">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.saveAN.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.savelife.Login" />
+        </activity>
+        <activity
+            android:name=".CourseWebsite"
+            android:label="Website" />
+        <activity
+            android:name=".CourseAndroid"
+            android:label="Android" />
+        <activity
+            android:name=".CourseUpse"
+            android:label="UPSE" />
+        <activity
+            android:name=".CourseRedhat"
+            android:label="Redhat" />
+        <activity
+            android:name=".CourseDesign"
+            android:label="Design" />
+        <activity
+            android:name=".CoursePython"
+            android:label="Python" />
+        <activity
+            android:name=".CourseCSharp"
+            android:label="C#" />
+        <activity
+            android:name=".CourseHtml"
+            android:label="HTML" />
+        <activity
+            android:name=".CourseJava"
+            android:label="Java" />
+        <activity
+            android:name=".CourseCPlusPlus"
+            android:label="C++" />
+        <activity
+            android:name=".CourseC"
+            android:label="C" />
+        <activity
+            android:name=".CourseRegister"
+            android:label="Register" />
+        <activity
+            android:name=".OnlineVacationalTranning"
+            android:label="Online Training" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".GeoFencing.MapsActivityGeoFence"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Home" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AlarmActivity"
+            android:label="@string/app_name" /> <!-- <service -->
+        <!-- android:name=".AlarmService" -->
+        <!-- android:enabled="true" /> -->
+        <!-- <receiver android:name=".AlarmReceiver" /> -->
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".Login"
+            android:label="Login">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/activity_signup">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".ForgetPassword"
+            android:label="@string/activity_reset">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".HomePreventive"
+            android:label="@string/activity_header_prevention">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".HomeContact"
+            android:label="@string/activity_header_contact">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".HomeMap"
+            android:label="Hospitals"
+             android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ModuleLabMap"
+            android:label="Labs">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".ModuleShelterMap"
+            android:label="Shelter Map">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".ModuleStoreMap"
+            android:label="Medical Store">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".ModuleAdmission"
+            android:label="Admission">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".ModuleSupport"
+            android:label="Support">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".WebsiteView"
+            android:label="Web"
+            android:theme="@style/Theme.Design.NoActionBar">
+        </activity>
+        <activity
+            android:name=".TermsAndConditions"
+            android:label="Terms and Conditions">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".ModuleMsmeProduct"
+            android:label="Product">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="Settings">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".ModuleSymptoms"
+            android:label="Symptoms">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".ModuleTransportPass"
+            android:label="Transport Pass">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".ModuleWorkers"
+            android:label="Workers">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".HomeMedia"
+            android:label="@string/activity_header_media">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".HomeSearch"
+            android:label="@string/activity_header_search">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".RegisterAdmission"
+            android:label="Admission Registration">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".RegisterAppoinment"
+            android:label="Appoinment Registration">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".RegisterCounselling"
+            android:label="Counselling Registration">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".RegisterCourses"
+            android:label="Course Registration">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".RegisterDonors"
+            android:label="Donor Registration">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".RegisterPass"
+            android:label="e-Pass Registration">
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".RegisterWorker"
+            android:label="Registration">
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".RegisterVolunteer"
+            android:label="Volunteer Registration">
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".DownloudReport"
+            android:label="Reports">
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".Assessment"
+            android:label="Assessment">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".CoronaCaseDetails"
+            android:label="Case Details">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".CoronaSupport"
+            android:label="Support">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+        <activity
+            android:name=".ModulesList"
+            android:label="Dashboard">
+
+            <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        </activity>
+    </application>
+
+</manifest>

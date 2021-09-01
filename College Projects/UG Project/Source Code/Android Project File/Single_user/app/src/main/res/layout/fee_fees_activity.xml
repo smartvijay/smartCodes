@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abishek.single_user.Fee_fees">
+
+    <RelativeLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="3dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/head_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/cardview_shadow_start_color"
+                android:gravity="center"
+                android:text="Tuition Fees"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_heading"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/f_term"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Year"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/fv_recp_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="Fourth Year" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/fv_recp_no"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/f_semester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Semester"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/fv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/f_semester"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/line1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="Seven" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/fv_date"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/f_dueDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Due Date"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/fv_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/f_dueDate"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="20-05 -2016" />
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/f_dueDate"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/f_feesamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Fees Amount"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/fv_feesamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/f_feesamount"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="40,000" />
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/f_feesamount"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/f_cons_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Cocession Amount"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/fv_cons_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/f_cons_amount"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="20,000" />
+
+                <View
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/f_cons_amount"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line5"
+                    app:cardBackgroundColor="@color/c_login_background"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/f_net_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:padding="4dp"
+                            android:text="Net Amount"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/fv_pending_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/f_net_amount"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:text="20,000"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_heading2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_details"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/head_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/cardview_shadow_start_color"
+                android:gravity="center"
+                android:text="Transport Fees"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_detail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_heading2"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/f_ter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Year"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/fv_yea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="Fourth Year" />
+
+                <View
+                    android:id="@+id/line11"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/fv_yea"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/f_semeste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line11"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Semester"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/fv_semeste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/f_semeste"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/line11"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="Seven" />
+
+                <View
+                    android:id="@+id/line22"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/fv_semeste"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/f_dueDat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line22"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Due Date"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/fv_dueDat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/f_dueDat"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/line22"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="20-05 -2016" />
+
+                <View
+                    android:id="@+id/line33"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/f_dueDat"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/f_feesamoun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line33"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Fees Amount"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/fv_feesamoun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/f_feesamoun"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/line22"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="12,000" />
+
+                <View
+                    android:id="@+id/line44"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/f_feesamoun"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/f_cons_amoun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line44"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Cocession Amount"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/fv_cons_amoun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/f_cons_amoun"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/line22"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="0.00" />
+
+                <View
+                    android:id="@+id/line55"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/f_cons_amoun"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line55"
+                    app:cardBackgroundColor="@color/c_login_background"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/f_net_amoun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:padding="4dp"
+                            android:text="Net Amount"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/fv_net_amoun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/f_net_amoun"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:text="12,000"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_heading3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_detail2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/head_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/cardview_shadow_start_color"
+                android:gravity="center"
+                android:text="Other Fees"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_detail3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_heading3"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/o_ter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Year"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/ov_yea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="Fourth Year" />
+
+                <View
+                    android:id="@+id/oline11"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/ov_yea"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/o_semeste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/oline11"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Semester"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/ov_semeste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/o_semeste"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/oline11"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="Seven" />
+
+                <View
+                    android:id="@+id/oline22"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/ov_semeste"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/o_dueDat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/oline22"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Due Date"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/ov_dueDat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/o_dueDat"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/oline22"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="21-05 -2016" />
+
+                <View
+                    android:id="@+id/oline33"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/o_dueDat"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/o_feesamoun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/oline33"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Fees Amount"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/ov_feesamoun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/o_feesamoun"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/oline22"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="9,500" />
+
+                <View
+                    android:id="@+id/oline44"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/o_feesamoun"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/o_cons_amoun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/oline44"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Cocession Amount"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/ov_cons_amoun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/o_cons_amoun"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/oline22"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="0.00" />
+
+                <View
+                    android:id="@+id/oline55"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/o_cons_amoun"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/line" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/oline55"
+                    app:cardBackgroundColor="@color/c_login_background"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/o_net_amoun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:padding="4dp"
+                            android:text="Net Amount"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/ov_pending_amoun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/o_net_amoun"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:text="9,500"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_detail3"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="#FFFF6767">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/t_term"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:text="Total "
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:text="41,500" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+</ScrollView>

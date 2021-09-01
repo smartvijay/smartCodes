@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/translate"
+        android:icon="@drawable/web_icon_two"
+        android:title="map"
+        android:contentDescription="i will"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:contentDescription="i will update later"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/more"
+        android:title="Terms and Conditions"
+        android:contentDescription="i will update later"
+        app:showAsAction="never" />
+
+</menu>

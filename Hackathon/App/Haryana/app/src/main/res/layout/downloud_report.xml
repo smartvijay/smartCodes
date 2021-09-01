@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/smoke"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".DownloudReport">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/scrollView">
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusable="true"
+            android:background="@color/smoke"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/preventive_card_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                app:cardElevation="2dp"
+                app:cardMaxElevation="2dp"
+                android:background="@color/module_card_one"
+                android:backgroundTint="@color/module_card_one"
+                app:cardBackgroundColor="@color/module_card_one"
+                android:theme="@style/Theme.MaterialComponents.Light">
+
+                //   app:cardUseCompatPadding="true"
+
+                <LinearLayout
+                    android:id="@+id/module_linear_layout_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/prevent_text_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="Coronavirus disease (COVID-2019) situation reports pdf (July - 2020)"
+                        android:textAppearance="?attr/textAppearanceBody1" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@color/smoke">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/smoke"
+                        android:gravity="center_horizontal">
+
+
+                        <Button
+                            android:id="@+id/report1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="1 July 2020"
+                            android:layout_margin="5dp"
+                            android:textColor="@color/cardview_dark_background" />
+                        <Button
+                            android:id="@+id/report2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:layout_below="@+id/report1"
+                            android:paddingLeft="5dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="2 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+                        <Button
+                            android:id="@+id/report3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:layout_below="@+id/report2"
+                            android:layout_margin="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="3 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+                        <Button
+                            android:id="@+id/report4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_below="@+id/report3"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="4 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+                        <Button
+                            android:id="@+id/report5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:layout_margin="5dp"
+                            android:layout_below="@+id/report4"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="5 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+                        <Button
+                            android:id="@+id/report6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:layout_margin="5dp"
+                            android:layout_below="@+id/report5"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="6 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+                        <Button
+                            android:id="@+id/report7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_below="@+id/report6"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="7 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+                        <Button
+                            android:id="@+id/report8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:layout_margin="5dp"
+                            android:layout_below="@+id/report7"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="8 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+                        <Button
+                            android:id="@+id/report9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:layout_below="@+id/report8"
+                            android:layout_margin="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="9 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+                        <Button
+                            android:id="@+id/report10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:layout_below="@+id/report9"
+                            android:layout_margin="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="10 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+                        <Button
+                            android:id="@+id/report11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:layout_margin="5dp"
+                            android:layout_below="@+id/report10"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="11 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+                        <Button
+                            android:id="@+id/report12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_below="@+id/report11"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="12 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+                        <Button
+                            android:id="@+id/report13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:layout_below="@+id/report12"
+                            android:layout_margin="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="13 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+                        <Button
+                            android:id="@+id/report14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_below="@+id/report13"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="14 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+                        <Button
+                            android:id="@+id/report15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:layout_below="@+id/report12"
+                            android:paddingLeft="5dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="15 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+                        <Button
+                            android:id="@+id/report16"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/report15"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="16 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+                        <Button
+                            android:id="@+id/report17"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/report16"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_margin="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="17 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+                        <Button
+                            android:id="@+id/report18"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/report17"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_margin="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="18 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+                        <Button
+                            android:id="@+id/report19"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/report18"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_margin="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="19 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+                        <Button
+                            android:id="@+id/report20"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/report19"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@color/white"
+                            android:text="20 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+                        <Button
+                            android:id="@+id/report21"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/report20"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_margin="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="21 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+                        <Button
+                            android:id="@+id/report22"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/report21"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="22 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+                        <Button
+                            android:id="@+id/report23"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/report22"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_margin="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="23 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+                        <Button
+                            android:id="@+id/report24"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/report23"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_margin="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="24 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+                        <Button
+                            android:id="@+id/report25"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/report24"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_margin="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="25 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+                        <Button
+                            android:id="@+id/report26"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/report25"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_margin="5dp"
+                            android:layout_marginBottom="30dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="26 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+
+                        <Button
+                            android:id="@+id/report27"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/report26"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_margin="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="26 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+
+                        <Button
+                            android:id="@+id/report28"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/report27"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_margin="5dp"
+                            android:layout_marginBottom="30dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="26 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+                        <Button
+                            android:id="@+id/report29"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/report28"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_marginBottom="30dp"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:text="26 July 2020"
+                            android:textColor="@color/cardview_dark_background" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

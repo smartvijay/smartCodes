@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpage"
+    tools:context="com.example.abishek.single_user.Login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <!--  android:background="@drawable/loginpage"-->
+    <EditText
+        android:id="@+id/et_roll"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="220dp"
+        android:drawablePadding="16dp"
+        android:ems="15"
+        android:hint="@string/RollNo"
+        android:padding="13dp"
+        android:textColorHint="#9E9E9E"
+        android:maxLines="1"
+        android:background="@drawable/background"
+        />
+    <!--android:drawableRight="@drawable/ic_person_black_24dp"-->
+    <!--android:background="@drawable/background"-->
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_login"
+        android:layout_alignLeft="@+id/et_roll"
+        android:layout_alignStart="@+id/et_roll"
+        android:layout_marginBottom="15dp"
+        android:drawablePadding="16dp"
+        android:ems="15"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="13dp"
+        android:textColorHint="#9E9E9E"
+        android:background="@drawable/background"/>
+    <!--  android:background="@drawable/background"-->
+    <!-- android:drawableRight="@drawable/ic_lock_black_24dp"-->
+
+
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+
+        android:text="@string/Button"
+        tools:text="Login"
+        android:background="@drawable/background"/>
+    <!--   android:background="@drawable/background"-->
+
+
+
+</RelativeLayout>

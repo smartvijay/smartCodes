@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "144221239213",
+    "firebase_url": "https://save-life-fb2a6.firebaseio.com",
+    "project_id": "save-life-fb2a6",
+    "storage_bucket": "save-life-fb2a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144221239213:android:f9683964c61feee1c8d324",
+        "android_client_info": {
+          "package_name": "com.example.saveAN"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144221239213-kfdt2irjm685piaqsjtkir5pr4qjf4ml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saveAN",
+            "certificate_hash": "d74c172710838a1797153b989d78472e7d18b0bd"
+          }
+        },
+        {
+          "client_id": "144221239213-tqe58h9lvupca5fj2514mn8evmgcel2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDawFs3tYpuPCAgJKfdefZeGY_ygz4TmmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144221239213-tqe58h9lvupca5fj2514mn8evmgcel2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

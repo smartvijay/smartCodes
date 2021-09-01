@@ -1,0 +1,1656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/first_design"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="110dp">
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/second_design"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/first_design"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="70dp">
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/second_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/zone"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="bottom"
+                    android:padding="10dp"
+                    android:text="District"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/zone_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/zone"
+                    android:gravity="bottom"
+                    android:layout_marginRight="2dp"
+                    android:paddingTop="10dp"
+                    android:text=":"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/zone_dot"
+                    android:hint="Verify State"
+                    android:background="@color/smoke"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15dp" />
+
+                <ImageButton
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/spinner3"
+                    android:background="@drawable/rounded_corner_button"
+                    android:clickable="true"
+                    android:onClick="on"
+                    android:src="@drawable/bluttoth_art" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/zone_card_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/second_layout"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:cardMaxElevation="2dp"
+                android:background="@color/module_card_one"
+                android:backgroundTint="@color/module_card_one"
+                app:cardBackgroundColor="@color/module_card_one"
+                android:theme="@style/Theme.MaterialComponents.Light">
+
+                <RelativeLayout
+                    android:id="@+id/top_one_layout"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp">
+
+                    <RelativeLayout
+                        android:id="@+id/top_image_layout"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:id="@+id/main_login_image"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/covid_z" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/case_status"
+                        android:layout_toRightOf="@+id/top_image_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/zone_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+                                android:id="@+id/zone_txt"
+                                android:layout_width="55dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="3dp"
+                                android:gravity="bottom"
+                                android:text="Zone"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/zone_top_dot"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/zone_txt"
+                                android:gravity="bottom"
+                                android:text=":"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="3dp"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/district"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="3dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_toRightOf="@+id/zone_top_dot"
+                                android:hint="Select"
+                                android:inputType="textEmailAddress"
+                                android:textStyle="bold"
+                                android:textSize="15sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/total_case"
+                            android:layout_below="@+id/zone_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+                                android:id="@+id/addressa"
+                                android:layout_width="55dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="bottom"
+                                android:text="Total"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dota"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/addressa"
+                                android:gravity="bottom"
+                                android:text=":"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvLocalitya"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="3dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_toRightOf="@+id/dota"
+                                android:hint="15,969,645"
+                                android:inputType="textEmailAddress"
+                                android:textStyle="bold"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/total_recovered"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/total_case"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+                                android:id="@+id/addressb"
+                                android:layout_width="55dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="bottom"
+                                android:text="Recover"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dotb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/addressb"
+                                android:gravity="bottom"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text=":"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvLocalityb"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_toRightOf="@+id/dotb"
+                                android:hint="9,762,369"
+                                android:layout_marginRight="3dp"
+                                android:textStyle="bold"
+                                android:inputType="textEmailAddress"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/total_death"
+                            android:layout_below="@+id/total_recovered"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+                                android:id="@+id/addressc"
+                                android:layout_width="55dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Death"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dotc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/addressc"
+                                android:gravity="bottom"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text=":"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvLocalityc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/dotc"
+                                android:hint="643,390"
+                                android:layout_marginRight="3dp"
+                                android:inputType="textEmailAddress"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold"
+                                android:textSize="15sp" />
+
+
+                            <!--                <EditText-->
+                            <!--                    android:id="@+id/et_country"-->
+                            <!--                    android:layout_width="match_parent"-->
+                            <!--                    android:layout_height="wrap_content"-->
+                            <!--                    android:hint="Enter country" />-->
+                            <!--                <EditText-->
+                            <!--                    android:id="@+id/et_state"-->
+                            <!--                    android:layout_width="match_parent"-->
+                            <!--                    android:layout_height="wrap_content"-->
+                            <!--                    android:hint="Enter State" />-->
+                            <!--                <EditText-->
+                            <!--                    android:id="@+id/et_district"-->
+                            <!--                    android:layout_width="match_parent"-->
+                            <!--                    android:layout_height="wrap_content"-->
+                            <!--                    android:hint="Enter District" />-->
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/top_tracker_image"
+                android:layout_below="@+id/zone_card_one"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/covid_tracker_new" />
+
+            <!--                <pl.droidsonroids.gif.GifImageView-->
+            <!--                    android:id="@+id/main_login_image"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_centerHorizontal="true"-->
+            <!--                    android:layout_width="100dp"-->
+            <!--                    android:layout_height="100dp"-->
+            <!--                    android:background="@drawable/jump_corona" />-->
+
+            <!--            <com.google.android.material.card.MaterialCardView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:background="@color/blue"-->
+            <!--                app:cardBackgroundColor="@color/blue"-->
+            <!--                android:theme="@style/Theme.MaterialComponents.Light"-->
+            <!--                android:layout_height="100dp">-->
+            <!--            </com.google.android.material.card.MaterialCardView>-->
+
+            <!--        <ImageView-->
+            <!--            android:id="@+id/top_home_image"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:src="@drawable/finals"></ImageView>-->
+
+            <LinearLayout
+                android:id="@+id/module_relative_layout_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/top_tracker_image"
+                android:layout_gravity="center_horizontal"
+                android:focusable="true"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_one"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:background="@color/module_card_one"
+                    android:backgroundTint="@color/module_card_one"
+                    app:cardBackgroundColor="@color/module_card_one"
+                    android:theme="@style/Theme.MaterialComponents.Light">
+
+
+                    <ImageView
+                        android:id="@+id/module_image_one"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_volunteer_three"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+                    <!--                    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                    <!--                    android:id="@+id/module_image_one"-->
+                    <!--                    android:layout_width="50dp"-->
+                    <!--                    android:layout_height="50dp"-->
+                    <!--                    android:layout_marginTop="3dp"-->
+                    <!--                    android:src="@drawable/module_volunteer_three"-->
+                    <!--                    android:layout_gravity="center_horizontal"-->
+                    <!--                    app:civ_border_color="@color/cardColor"-->
+                    <!--                    app:civ_border_width="1dp"-->
+                    <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--                <ImageView-->
+                    <!--                    android:id="@+id/module_image_one"-->
+                    <!--                    android:layout_width="50dp"-->
+                    <!--                    android:layout_marginTop="3dp"-->
+                    <!--                    android:background="@color/red"-->
+                    <!--                    android:layout_height="50dp"-->
+                    <!--                    android:layout_gravity="center_horizontal"-->
+                    <!--                    android:src="@drawable/hand_soap">-->
+                    <!--                </ImageView>-->
+
+                    <LinearLayout
+                        android:id="@+id/module_linear_layout_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/module_text_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:text="Volunteer"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_two"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_toRightOf="@+id/module_card_one"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:background="@color/module_card_one"
+                    android:backgroundTint="@color/module_card_one"
+                    app:cardBackgroundColor="@color/module_card_one"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_two"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_store"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!--                <ImageView-->
+                    <!--                    android:id="@+id/module_image_two"-->
+                    <!--                    android:layout_width="50dp"-->
+                    <!--                    android:layout_marginTop="3dp"-->
+                    <!--                    android:layout_height="50dp"-->
+                    <!--                    android:layout_gravity="center_horizontal"-->
+                    <!--                    android:src="@drawable/hand_soap">-->
+                    <!--                </ImageView>-->
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:text="Stores"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_three"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:background="@color/module_card_one"
+                    android:backgroundTint="@color/module_card_one"
+                    app:cardBackgroundColor="@color/module_card_one"
+                    android:layout_toRightOf="@+id/module_card_two"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_three"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_pass_two"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:gravity="center_horizontal"
+                            android:text="ePass"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_four"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:background="@color/module_card_one"
+                    android:backgroundTint="@color/module_card_one"
+                    app:cardBackgroundColor="@color/module_card_one"
+                    android:layout_toRightOf="@+id/module_card_three"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_four"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_prevent_tthree"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="Prevent"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/module_relative_layout_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_below="@+id/module_relative_layout_one"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_five"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:background="@color/module_card_one"
+                    android:backgroundTint="@color/module_card_one"
+                    app:cardBackgroundColor="@color/module_card_one"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_five"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_map"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_linear_layout_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/module_text_five"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="Shelter"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_six"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:background="@color/module_card_one"
+                    android:backgroundTint="@color/module_card_one"
+                    app:cardBackgroundColor="@color/module_card_one"
+                    android:layout_toRightOf="@+id/module_card_five"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/module_image_six"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_assesmet"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_six"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="Track"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_seven"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:background="@color/module_card_one"
+                    android:backgroundTint="@color/module_card_one"
+                    app:cardBackgroundColor="@color/module_card_one"
+                    android:layout_toRightOf="@+id/module_card_six"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_seven"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_map_two"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_seven"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="Location"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_eight"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:background="@color/module_card_one"
+                    android:backgroundTint="@color/module_card_one"
+                    app:cardBackgroundColor="@color/module_card_one"
+                    android:layout_toRightOf="@+id/module_card_seven"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_eight"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_volunteer"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_eight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:padding="2dp"
+                            android:gravity="center_horizontal"
+                            android:text="Workers"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/module_relative_layout_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_below="@+id/module_relative_layout_two"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_nine"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_nine"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_video_two"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_linear_layout_nine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/module_text_nine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="Media"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_ten"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:layout_toRightOf="@+id/module_card_nine"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/module_image_ten"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/module_contact"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_ten"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="2dp"
+                            android:text="Contact"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_eleven"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:layout_toRightOf="@+id/module_card_ten"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_eleven"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/module_geofence_one"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_eleven"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:text="Geofence"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_twelve"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:layout_toRightOf="@+id/module_card_eleven"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_twelve"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_assesment_one"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_twelve"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="Assesmen"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/module_relative_layout_four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_below="@+id/module_relative_layout_three"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_thirteen"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_thirteen"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_counseling_one"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_linear_layout_thirteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/module_text_thirteen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="Counsellin"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_fourteen"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:layout_toRightOf="@+id/module_card_thirteen"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/module_image_fourteen"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/module_donor_two"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="Donor"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_fifteen"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:layout_toRightOf="@+id/module_card_fourteen"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_fifteen"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_reports"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_fifteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:gravity="center_horizontal"
+                            android:text="Reports"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_sixteen"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:layout_toRightOf="@+id/module_card_fifteen"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_sixteen"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_pass_five"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_sixteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="Tran pass"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/module_relative_layout_five"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_below="@+id/module_relative_layout_four"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_seventeen"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_seventeen"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_support"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_linear_layout_seventeen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/module_text_seventeen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="Support"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_eighteen"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:layout_toRightOf="@+id/module_card_seventeen"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/module_image_eighteen"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_product_one"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_eighteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="MSME"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_nineteen"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:layout_toRightOf="@+id/module_card_eighteen"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_nineteen"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_appoinment"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_nineteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="Apoinment"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_twenty"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:layout_toRightOf="@+id/module_card_nineteen"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_twenty"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_symptoms"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_twenty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="Symptoms"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/module_relative_layout_six"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_below="@+id/module_relative_layout_five"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_twenty_one"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_twenty_one"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_admission"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_linear_layout_twenty_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/module_text_twenty_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="2dp"
+                            android:text="Admissio"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_twenty_two"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:layout_toRightOf="@+id/module_card_twenty_one"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/module_image_twenty_two"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/module_labs"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_twenty_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="Labs"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_twenty_three"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:layout_toRightOf="@+id/module_card_twenty_two"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/module_image_twenty_three"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/module_alarm"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_twenty_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:text="Alarm"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/module_card_twenty_four"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="2dp"
+                    android:layout_toRightOf="@+id/module_card_twenty_three"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/module_image_twenty_four"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/module_course"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <LinearLayout
+                        android:id="@+id/module_layout_twenty_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:gravity="center_horizontal"-->
+                        <!--                    android:padding="2dp"-->
+                        <!--                    android:text="Volunteer" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:gravity="center_horizontal"
+                            android:text="Course"
+                            android:textAppearance="?attr/textAppearanceBody2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

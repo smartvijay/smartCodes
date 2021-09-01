@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abishek.single_user.attend_summary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_heading_semester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/semester_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/cardview_shadow_start_color"
+                android:gravity="center"
+                android:text="Semester Seven"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_heading_semester"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/f_tdat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="5dp"
+                    android:text="July"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/leave_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/f_tdat"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="5dp"
+                    android:text="Days"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/leave_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/leave_date"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="Absent"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/total_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/leave_to"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:padding="5dp"
+                    android:text="Present"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/leave_dat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/leave_date"
+                    android:layout_alignStart="@+id/leave_date"
+                    android:layout_below="@+id/leave_date"
+                    android:padding="5dp"
+                    android:text="22" />
+
+                <TextView
+                    android:id="@+id/to_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/leave_to"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="0" />
+
+
+                <TextView
+                    android:id="@+id/total_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/total_days"
+                    android:layout_alignRight="@+id/total_days"
+                    android:layout_below="@+id/total_days"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp"
+                    android:text="22" />
+
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/leave_dat"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/f_tda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="5dp"
+                    android:text="August"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/leave_datt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/f_tda"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="5dp"
+                    android:text="Days"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/leave_tt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/leave_datt"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="Absent"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/total_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/leave_tt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:padding="5dp"
+                    android:text="Present"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/leave_da"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/leave_datt"
+                    android:layout_alignStart="@+id/leave_datt"
+                    android:layout_below="@+id/leave_datt"
+                    android:padding="5dp"
+                    android:text="21" />
+
+                <TextView
+                    android:id="@+id/to_dat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/leave_tt"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="4" />
+
+
+                <TextView
+                    android:id="@+id/total_dat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/total_day"
+                    android:layout_alignRight="@+id/total_day"
+                    android:layout_below="@+id/total_day"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp"
+                    android:text="17" />
+
+
+                <View
+                    android:id="@+id/line33"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/total_dat"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/f_tda3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/line33"
+                    android:layout_alignStart="@+id/line33"
+                    android:layout_alignTop="@+id/line33"
+                    android:padding="5dp"
+                    android:text="September"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/leave_datt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/f_tda3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="5dp"
+                    android:text="Days"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/leave_tt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/leave_datt3"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="Absent"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/total_day3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/leave_tt3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:padding="5dp"
+                    android:text="Present"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/leave_da3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/leave_datt3"
+                    android:layout_alignStart="@+id/leave_datt3"
+                    android:layout_below="@+id/leave_datt3"
+                    android:padding="5dp"
+                    android:text="18" />
+
+                <TextView
+                    android:id="@+id/to_dat3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/leave_tt3"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="2.5" />
+
+
+                <TextView
+                    android:id="@+id/total_dat33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/total_day3"
+                    android:layout_alignRight="@+id/total_day3"
+                    android:layout_below="@+id/total_day3"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp"
+                    android:text="15.5" />
+
+
+                <!-- <View
+                     android:id="@+id/line44"
+                     android:layout_width="match_parent"
+                     android:layout_height="5dp"
+                     android:layout_below="@+id/total_dat33"
+                     android:background="@drawable/line"
+                     android:layout_marginEnd="20dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="20dp"
+                     android:layout_marginStart="10dp"
+                     android:layout_marginTop="5dp"
+                      />-->
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card3"
+            android:layout_marginTop="5dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/f_tda34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Total"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/leave_datt34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/f_tda34"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:padding="5dp"
+                        android:text="Days"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/leave_tt34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/leave_datt34"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="Absent"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/total_day34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/leave_tt34"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:padding="5dp"
+                        android:text="Present"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/leave_da34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/leave_datt34"
+                        android:layout_alignStart="@+id/leave_datt34"
+                        android:layout_below="@+id/leave_datt34"
+                        android:padding="5dp"
+                        android:text="61" />
+
+                    <TextView
+                        android:id="@+id/to_dat34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/leave_tt34"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="6.5" />
+
+
+                    <TextView
+                        android:id="@+id/total_dat34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/total_day34"
+                        android:layout_alignRight="@+id/total_day34"
+                        android:layout_below="@+id/total_day34"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:padding="5dp"
+                        android:text="54.5" />
+
+
+                    <View
+                        android:id="@+id/line55"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_below="@+id/total_dat34"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/line" />
+
+                    <TextView
+                        android:id="@+id/f_tda35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line55"
+                        android:padding="5dp"
+                        android:text="Present"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/leave_datt35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/f_tda35"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:padding="5dp"
+                        android:text="Days"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/leave_tt35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/leave_datt35"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="Absent"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/total_day35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/leave_tt35"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:padding="5dp"
+                        android:text="Present"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/leave_da35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/leave_datt35"
+                        android:layout_alignStart="@+id/leave_datt35"
+                        android:layout_below="@+id/leave_datt35"
+                        android:padding="5dp"
+                        android:text="100" />
+
+                    <TextView
+                        android:id="@+id/to_dat35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/leave_tt35"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="10.6" />
+
+
+                    <TextView
+                        android:id="@+id/total_dat35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/total_dat34"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignStart="@+id/total_dat34"
+                        android:padding="5dp"
+                        android:text="89.34" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+table, th , td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+padd{
+     padding-left: 80px;
+}
+
+h1{text-align: center;}
+
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<h1 >Appoinment List</h1>
+<button onclick="window.print()"><i class="fa fas fa-print"></i>     Print</button>
+
+<div ng-app="myApp" ng-controller="customersCtrl"> 
+
+<table>
+       <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>mobile</th>
+     <th>email</th>
+    <th>role</th>
+    <th>gender</th>
+    <th>problem</th>
+     <th>date</th>
+    <th>country</th>
+    <th>state</th>
+     <th>city</th>
+    <th>pin</th>
+    <th>address</th>
+  </tr>
+  <tr ng-repeat="x in names">
+    <td>{{ x.id }}</td>
+    <td>{{ x.name }}</td>
+    <td>{{ x.mobile }}</td>
+      <td>{{ x.email }}</td>
+      <td>{{ x.role }}</td>
+       <td>{{ x.gender }}</td>
+    <td>{{ x.problem }}</td>
+      <td>{{ x.date }}</td>
+      <td>{{ x.country }}</td>
+       <td>{{ x.state }}</td>
+    <td>{{ x.city }}</td>
+      <td>{{ x.pin }}</td>
+      <td>{{ x.address }}</td>
+  </tr>
+</table>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+   $http.get("/States/ajax/aAppoinmentList.php")
+    .then(function (response) {
+        console.log(response);
+        $scope.names = response.data.data;});
+});
+</script>
+</body>
+</html>

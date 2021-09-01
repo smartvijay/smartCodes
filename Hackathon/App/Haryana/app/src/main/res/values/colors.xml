@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#C50101</color>-->
+<!--    <color name="colorPrimaryDark">#E93131</color>-->
+<!--    <color name="screen_background">#505050</color>-->
+<!--    <color name="colorPrimary">#3F51B5</color>-->
+<!--    <color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorPrimary">#C50101</color>
+    <color name="colorPrimaryDark">#B10101</color>
+
+<!--     meghalaya app color-->
+
+<!--    <color name="colorPrimary">#851466</color>-->
+<!--    <color name="colorPrimaryDark">#5C1349</color>-->
+
+    <color name="cardColor">#FCE8F6</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tnappcolor">#4d4dff</color>
+    <color name="meghalayaappcolor">#990099</color>
+    <color name="white">#F8F8FF</color>
+    <color name="black">#000000</color>
+    <color name="smoke">#f5f5f5</color>
+    <color name="red">#FF0000</color>
+    <color name="doogleblue">#990099</color>
+    <color name="linecolor">#E5E4E2</color>
+    <color name="slategrey">#6D7B8D</color>
+    <color name="doogleblues">#1E90FF</color>
+    <color name="blue">#2F4CE0</color>
+    <color name="light_yellow">#FF9800</color>
+    <color name="green">#00FF00</color>
+    <color name="header">#D3D3D3</color>
+    <color name="skyblue">#ADD8E6</color>
+    <color name="c_login_background">#26C6DA</color>#8A2BE2
+    <color name="c_StatusBar">#00838F</color>
+    <color name="c_Navigation_bar">#0097A7</color>
+    <color name="lightgray">#ededed</color>
+    <color name="light_orange">#FFB266</color>
+    <color name="light_green">#99FF99</color>
+    <color name="Floating_button_color">#707070</color>
+
+    //modules card colors
+
+    <color name="module_card_one">#FDFEFE</color>
+    <color name="dashboard_card_one">#5C1349</color>
+<!--    <color name="module_card_one">#F1D4D0</color>-->
+    <color name="module_card_two">#E5CDEE</color>
+    <color name="module_card_three">#C6DBEE</color>
+    <color name="module_card_four">#C4DAEE</color>
+    <color name="module_card_five">#A2D9CE</color>
+    <color name="module_card_six">#C6EED0</color>
+    <color name="module_card_seven">#ABEBC6</color>
+    <color name="module_card_eight">#F9E79F</color>
+    <color name="module_card_nine">#F9E79F</color>
+
+
+
+
+
+
+</resources>

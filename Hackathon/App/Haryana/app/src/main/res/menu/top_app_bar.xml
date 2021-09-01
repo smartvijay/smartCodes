@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/favorite"
+        android:icon="@drawable/home_map"
+        android:title="map"
+        android:contentDescription="sample"
+        android:tint="?attr/colorControlNormal"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/phone_art"
+        android:title="phone"
+        android:contentDescription="art"
+        android:tint="?attr/colorControlNormal"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/more"
+        android:title="art"
+        android:contentDescription="try"
+        android:tint="?attr/colorControlNormal"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/preventive_card_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        app:cardElevation="2dp"
+        app:cardMaxElevation="2dp"
+        android:background="@color/module_card_one"
+        android:backgroundTint="@color/module_card_one"
+        app:cardBackgroundColor="@color/module_card_one"
+        android:theme="@style/Theme.MaterialComponents.Light">
+
+
+        <LinearLayout
+            android:id="@+id/module_linear_layout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/prevent_text_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Alarm - Home treatment"
+                android:textAppearance="?attr/textAppearanceBody1" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtubeViewOne"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="2dp"
+                app:videoId="3PmVJQUCm4E"
+                app:autoPlay="false"
+                app:showFullScreenButton="false"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:checked="false"
+        android:onClick="OnToggleClicked" />
+
+</LinearLayout>

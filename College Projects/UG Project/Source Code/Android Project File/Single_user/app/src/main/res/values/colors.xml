@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#26C6DA</color>
+    <color name="colorPrimaryDark">#00838F</color>
+    <color name="colorAccent">#0097A7</color>
+
+    <color name="c_login_background">#26C6DA</color>
+    <color name="c_StatusBar">#00838F</color>
+    <color name="c_Navigation_bar">#0097A7</color>
+    <color name="lightgray">#ededed</color>
+</resources>
